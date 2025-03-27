@@ -10,6 +10,7 @@ const generateSignature = (
       .createHmac("sha256", secret)
       .update(payload)
       .digest("hex");
+      
   };
   
 export const isValidSignature = (
